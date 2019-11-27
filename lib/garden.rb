@@ -1,4 +1,5 @@
-# Something is missing here
+require 'pry' 
+require_relative './plant.rb'
 
 class Garden
   attr_accessor :name
@@ -14,12 +15,6 @@ class Garden
   end
 end
 
-lawn = Garden.new(name: 'Front Lawn')
+puts "hey!"
 
-basil = Plant.new(name: 'Basil')
-basil.garden = lawn
 
-cucumber = Plant.new(name: 'Cucumber')
-cucumber.garden = lawn
-
-p lawn.plants
